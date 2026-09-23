@@ -31,6 +31,7 @@
 <h2>2. Comment JobMatching accède aux données Google</h2>
 <p>L'accès n'a lieu qu'après consentement explicite du candidat sur l'écran d'autorisation Google. Les autorisations (scopes) demandées sont :</p>
 <ul>
+<li><code>openid</code> et <code>email</code> — identifier le compte Google connecté et vérifier qu'il correspond bien à l'adresse du candidat, afin qu'aucune candidature ne parte d'une autre boîte.</li>
 <li><code>https://www.googleapis.com/auth/gmail.send</code> — envoyer, depuis l'adresse du candidat, les candidatures qu'il a validées. Ce droit ne permet pas de lire la boîte.</li>
 <li><code>https://www.googleapis.com/auth/gmail.readonly</code> — confirmer l'envoi effectif des candidatures, lire les fils liés à ces candidatures et détecter les réponses des employeurs pour arrêter ou adapter les relances. Ce droit est en lecture seule : JobMatching ne modifie, ne déplace et ne supprime aucun message.</li>
 </ul>
